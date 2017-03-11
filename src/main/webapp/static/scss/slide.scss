@@ -1,0 +1,72 @@
+/* 外层包裹器 */
+
+.wrapper {
+    &.hidden {
+        display: none;
+    }
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .logo {
+        position: absolute;
+        left: 50px;
+        top: 40px;
+        transition: all .2s;
+        opacity: 1;
+        &.hidden {
+            opacity: 0;
+        }
+    }
+    /* 幻灯片容器 */
+    #container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        transition: all .2s;
+        transform: scale(1);
+        /* 幻灯片外层 */
+        .slide {
+            position: absolute;
+            transition: all .2s;
+            width: 100%;
+            height: 100%;
+            opacity: 0.3;
+            /* 幻灯片内容 */
+            .slide-content {
+                position: absolute;
+                transition: all .2s;
+                left: 50%;
+                top: 50%;
+                background: #FFF;
+                overflow: hidden;
+                img {
+                    max-width: 100%;
+                }
+                div {
+                    padding: 10px;
+                }
+                /* 如果是由幻灯片转换而来的图片 */
+                .slideCover {
+                    width: 100%;
+                    display: block;
+                }
+            }
+            &.current {
+                opacity: 1;
+            }
+        }
+        .canvas {
+            position: absolute;
+            left: 0;
+            top: 0;
+            &.edit {
+                cursor: url('http://localhost:5001/dist/img/pen.ico'), default;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.bar{
+	background-color:#363636;
+	height:64px
+	
+}
+.navbar-brand{
+	color:#F3CC8B !important;
+	padding-top:30px;
+	font-size:1.5em !important;
+	padding-left:50px
+}
+/* .navbar-form{
+	margin-top:20px;
+}*/
+.bar{
+	margin-bottom:0px
+} 
+#main{
+	font-size:1.2em !important;
+}
+#personal{
+	font-size:1.2em !important;
+}
+#message{
+	font-size:1.2em !important;
+}
+#search-input{
+background-color: rgba(247,204,140,0.19);
+border-radius: 90px;
+border:0;
+color:rgba(247,204,140,1);
+}
+.head-btn{
+	background-color:#F3CC8B;
+	border-color:#F3CC8B
+}
+.head-btn:hover{
+	background-color:#F3CC8B;
+}
+.btn-two{
+	margin-left:50px;
+	margin-right:100px;
+}
+#search-btn{
+	border-radius: 0 90px 90px 0;
+		opacity: 0.19;
+background-color: #F7CC8C;
+}
+.form-group{
+	margin-left:400px;
+	margin-right:30px
+}

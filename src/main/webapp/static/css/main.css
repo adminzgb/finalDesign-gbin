@@ -1,0 +1,48 @@
+#banner{
+	position:relative;
+	text-align:center;
+}
+#modalContent{
+	position:absolute;
+	opacity: 0.77;
+background: #FFFFFF;
+box-shadow: 0px 2px 24px 0px rgba(0,0,0,0.28);
+border-radius: 13px;
+left:250px; 
+bottom:-100px; 
+width:60%;
+ height:200px;
+ text-align:center;
+ margin:0 auto;
+}
+#app{
+	margin-top:100px
+}
+.name{
+	font-size:24px;
+	color:#363636;
+}
+.introduce{
+	color:#DCA850;
+	font-size:12px
+}
+.modalContent{
+	position:absolute;
+background-image: linear-gradient(270deg, #252525 22%, rgba(3,3,3,0.00) 100%);
+opacity: 0.77;
+left:265px;
+bottom:10px; 
+width:60%;
+ height:315px;
+ text-align:right;
+ margin:0 auto;
+ color:#FFFFFF;
+ padding-right: 30px;
+}
+.blog{
+position:relative	
+}
+.title:hover {
+	text-decoration:underline;
+	cursor:pointer
+}

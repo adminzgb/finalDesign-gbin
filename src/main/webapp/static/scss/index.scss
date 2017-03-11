@@ -1,0 +1,212 @@
+    html,
+body {
+    margin: 0;
+    background: #EAEAEA;
+    font-family: Helvetica Sans-serif serif;
+}
+
+#header_wrapper {    
+    width: 100%;
+    background: #363D42;
+    /*position:fixed;
+    top: 0;
+    z-index: 100;*/
+    header {
+        width: 1125px;
+        margin: 0 auto;
+        font-size: 24px;
+        color: #FFF;        
+        .logo {
+            display: inline-block;
+            height: 48px;
+            line-height: 48px;
+            padding-left: 10px;
+            font-family: Arial;
+        }
+        .header_right {
+            display: inline-block;
+            float: right;
+            font-size: 13px;
+            line-height: 28px;
+            padding: 15px 10px 10px 10px;
+            color: #999;
+            a {
+                text-decoration: none;
+                color: #999;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+#banner_wrapper {
+    width: 100%;
+    background: #464E54;
+    padding: 2px 0;
+    /*margin-top: 48px;*/
+    margin-bottom: 40px;
+    .banner {
+        width: 1125px;
+        margin: 0 auto;
+        padding: 20px 0;
+        video {
+            display: block;
+            width: 400px;
+            margin: 0 auto;
+        }
+        img {
+            display: block;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+    }
+}
+
+#content_wrapper {
+    min-height: 500px;
+    margin-bottom: 20px;
+    /* 主体内容 */
+    .content {
+        width: 1125px;
+        margin: 0 auto;
+        font-size: 0px;
+        overflow: hidden;
+        /* 缩略图容器  */
+        .thumbnail {
+            display: inline-block;
+            margin: 10px;
+            .image_box {
+                position: relative;
+                overflow: hidden;
+                padding: 10px;
+                background: #FFF;
+                img {
+                    width: 185px;
+                    height: 139px;
+                }
+                .description {
+                    width: 165px;
+                    font-size: 13px;
+                    margin: 0;
+                    overflow: hidden;
+                    color: #525252;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100px;
+                    padding: 40px 20px 20px 20px;
+                    background: #FFF;
+                    opacity: 0;
+                    transition: all 0.5s;
+                    cursor: hand;
+                    text-align: center;
+                    font-weight: bold;
+                    line-height: 18px;
+                    .uploadTime {
+                        display: block;
+                        padding-top: 10px;
+                    }
+                }
+                .description:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+#footer_wrapper {
+    width: 100%;
+    padding: 10px 0;
+    background: #FFF;
+    footer {
+        width: 1125px;
+        margin: 0 auto;
+        height: 100%;
+        p {
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+}
+
+
+/*当屏幕尺寸小于900px时，应用下面的CSS样式*/
+
+@media screen and (max-width: 1125px) {
+    #header_wrapper {
+        header {
+            width: 900px;
+        }
+    }
+    #banner_wrapper {
+        .banner {
+            width: 900px;
+        }
+    }
+    #content_wrapper {
+        .content {
+            width: 900px;
+        }
+    }
+    #footer_wrapper {
+        footer {
+            width: 900px;
+        }
+    }
+}
+/*当屏幕尺寸小于900px时，应用下面的CSS样式*/
+
+@media screen and (max-width: 900px) {
+    #header_wrapper {
+        header {
+            width: 100%;
+            min-width: 300px;
+            .logo {
+                font-size: 16px;
+            }
+            .header_right {
+                font-size: 12px;
+                padding-top: 10px;
+            }
+        }
+    }
+    #banner_wrapper {
+        .banner {
+            width: 100%;
+        }
+    }
+    #content_wrapper {
+        .content {
+            width: 675px;
+        }
+    }
+    #footer_wrapper {
+        footer {
+            width: 100%;
+        }
+    }
+}
+
+/*当屏幕尺寸小于680px时，应用下面的CSS样式*/
+
+@media screen and (max-width: 675px) {
+    #content_wrapper {
+        .content {
+            width: 450px;
+        }
+    }
+}
+
+/*当屏幕尺寸小于450px时，应用下面的CSS样式*/
+
+@media screen and (max-width: 450px) {
+    #content_wrapper {
+        .content {
+            width: 225px;
+        }
+    }
+}
